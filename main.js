@@ -49,3 +49,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//close nav after click mobile
+$(document).ready(function () {
+    $('.navLink').on('click', function () {
+        $('.navbar').toggleClass('expand');
+        return false;
+    });
+});
