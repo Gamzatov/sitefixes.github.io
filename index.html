@@ -57,22 +57,26 @@
 
             <nav class="navbar">
                 <ul class="menu">
-                    <li><a class="active navLink" href="#main">На початок</a></li><!--
-            -->
-                    <li><a class="navLink" href="#whatWeDo">Що ми робимо</a></li><!--
-            -->
-                    <li><a class="navLink" href="#solution">Рішення</a></li><!--
-            -->
-                    <li><a class="navLink" href="#price">Прайс-лист</a></li><!--
-            -->
+                    <li><a class="active navLink" href="#main">На початок</a></li>
+
+                    <li><a class="navLink" href="#whatWeDo">Що ми робимо</a></li>
+
+                    <li><a class="navLink" href="#solution">Рішення</a></li>
+
+                    <li><a class="navLink" href="#gallery">Галерея</a></li>
+
+                    <li><a class="navLink" href="#price">Прайс-лист</a></li>
+
                     <li><a class="navLink" href="#contacts">Контакти</a></li>
+
+                    <li><a class="navLink desk btn_flex" href="#contacts">Звʼязатися</a></li>
                 </ul>
             </nav>
             <div class="side_btns">
                 <div class="btn_item">
-                    <a class="btn btn_flex mob" href="#">
+                    <a class="btn btn_flex mob" href="#contacts">
                         <ion-icon class="icon_small" name="call-outline"></ion-icon>
-                        Звʼязатися
+                        <span> Звʼязатися</span>
                     </a>
                 </div>
             </div>
@@ -316,64 +320,96 @@
             </div>
         </div>
     </section>
+
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="tag">
-                Як ми працюємо
+                Наші роботи
             </div>
-            <p class="title">
+            <p class="title" style="padding-top: 40px;">
                 Галерея
             </p>
-            <div id="owl-gallery" class="owl-carousel">
-                <div class="gallery-item cafe">
-                    <div class="gallery-container cafe"></div>
-                    <div class="gallery-info">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
-                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
-                            ratione, nulla excepturi esse? Sit, ut.
-                        </p>
-                        <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
-                            сайт</button>
-                    </div>
-                </div>
-                <div class="gallery-item cafe">
-                    <div class="gallery-container cafe"></div>
-                    <div class="gallery-info">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
-                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
-                            ratione, nulla excepturi esse? Sit, ut.
-                        </p>
-                        <button class="btn open-site-btn btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
-                            сайт</button>
-                    </div>
-                </div>
-                <div class="gallery-item cafe">
-                    <div class="gallery-container cafe"></div>
-                    <div class="gallery-info">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
-                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
-                            ratione, nulla excepturi esse? Sit, ut.
-                        </p>
-                        <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
-                            сайт</button>
-                    </div>
-                </div>
-                <div class="gallery-item cafe">
-                    <div class="gallery-container cafe"></div>
-                    <div class="gallery-info">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
-                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
-                            ratione, nulla excepturi esse? Sit, ut.
-                        </p>
-                        <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
-                            сайт</button>
-                    </div>
+        </div>
+        <div id="owl-gallery" class="owl-carousel">
+            <div class="gallery-item cafe">
+                <div class="gallery-container cafe"></div>
+                <div class="gallery-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                        suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                        ratione, nulla excepturi esse? Sit, ut.
+                    </p>
+                    <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
+                        сайт</button>
                 </div>
             </div>
+            <div class="gallery-item cafe">
+                <div class="gallery-container cafe"></div>
+                <div class="gallery-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                        suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                        ratione, nulla excepturi esse? Sit, ut.
+                    </p>
+                    <button class="btn open-site-btn btn" onclick="openPopup('./templates/cafe/index.html')">
+                        <ion-icon name="eye-outline" class="show_icon"></ion-icon> <span class="btn_text">
+                            Посмотреть</span>
+                    </button>
+                </div>
+            </div>
+            <div class="gallery-item cafe">
+                <div class="gallery-container cafe"></div>
+                <div class="gallery-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                        suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                        ratione, nulla excepturi esse? Sit, ut.
+                    </p>
+                    <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">
+                        <ion-icon name="eye-outline"></ion-icon> <span class="btn_text"> Посмотреть</span>
+                    </button>
+                </div>
+            </div>
+            <div class="gallery-item cafe">
+                <div class="gallery-container cafe"></div>
+                <div class="gallery-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                        suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                        ratione, nulla excepturi esse? Sit, ut.
+                    </p>
+                    <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">
+                        <ion-icon name="eye-outline"></ion-icon> <span class="btn_text"> Посмотреть</span>
+                    </button>
+                </div>
+            </div>
+            <div class="gallery-item cafe">
+                <div class="gallery-container cafe"></div>
+                <div class="gallery-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                        suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                        ratione, nulla excepturi esse? Sit, ut.
+                    </p>
+                    <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">
+                        <ion-icon name="eye-outline"></ion-icon> <span class="btn_text"> Посмотреть</span>
+                    </button>
+                </div>
+            </div>
+            <div class="gallery-item cafe">
+                <div class="gallery-container cafe"></div>
+                <div class="gallery-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                        suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                        ratione, nulla excepturi esse? Sit, ut.
+                    </p>
+                    <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">
+                        <ion-icon name="eye-outline"></ion-icon> <span class="btn_text"> Посмотреть</span>
+                    </button>
+                </div>
+            </div>
+
         </div>
     </section>
     </div>
@@ -402,7 +438,7 @@
                     </p>
                     <a href="tel:+380505555555" style="margin: 30px 0px 24px 0" class="call">Зателефонуйте: +380
                         (50)-555-55-55</a>
-                    <p class="title_small" style="margin:0 30px 0 25px; font-weight: 500;">
+                    <p class="title_small" style="margin:10px 0; font-weight: 500;">
                         Ви отримаєте:
                     </p>
                     <div class="grid_benefit">
@@ -533,18 +569,17 @@
             Всі права захищені 2024©
         </div>
     </footer>
-
+    <div id="popup-overlay" class="popup-overlay hidden">
+        <div class="popup">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <iframe id="popup-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        function openPopup(url) {
-            // Открываем новое окно с указанными параметрами
-            window.open(url, '_blank', 'width=800,height=600,resizable=yes,scrollbars=yes');
-        }
-    </script>
 </body>
 
 </html>

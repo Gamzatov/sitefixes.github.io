@@ -65,6 +65,7 @@ $(document).ready(function () {
         loop: true,
         margin: 20,
         autoplay: true,
+        nav: true,
         responsiveClass: true,
         responsive: {
             0: {
@@ -76,7 +77,7 @@ $(document).ready(function () {
                 nav: false
             },
             1000: {
-                items: 3,
+                items: 5,
                 nav: true,
                 loop: false
             }
@@ -86,3 +87,28 @@ $(document).ready(function () {
     });
 
 });
+
+// pop window for gallery
+// Открыть попап с указанным URL
+function openPopup(url) {
+    const popupOverlay = document.getElementById('popup-overlay');
+    const iframe = document.getElementById('popup-iframe');
+
+    // Устанавливаем URL в iframe
+    iframe.src = url;
+
+    // Показываем попап
+    popupOverlay.classList.remove('hidden');
+}
+
+// Закрыть попап
+function closePopup() {
+    const popupOverlay = document.getElementById('popup-overlay');
+    const iframe = document.getElementById('popup-iframe');
+
+    // Очищаем URL в iframe (для перезагрузки при следующем открытии)
+    iframe.src = '';
+
+    // Прячем попап
+    popupOverlay.classList.add('hidden');
+}
