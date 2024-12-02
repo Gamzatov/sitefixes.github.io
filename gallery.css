@@ -1,0 +1,97 @@
+.gallery {
+    padding: 30px 0;
+}
+
+.open-site-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.open-site-btn:hover {
+    background-color: #45a049;
+}
+
+.gallery-container {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    margin: 0 15px;
+    height: 400px;
+}
+
+.gallery-container.cafe {
+    background: url('./images/cafe.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+.owl-carousel {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.gallery-item {
+    display: flex;
+    flex: 1;
+    position: relative;
+    padding: 15px;
+}
+
+#owl-gallery {
+    display: flex;
+}
+
+.gallery-info {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.gallery-item.cafe:hover .gallery-info {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.gallery-item.cafe:hover .owl-item.active {
+    width: 100% !important;
+    right: 0;
+}
+
+
+#owl-gallery {
+    display: flex;
+    flex: 1;
+}
+
+.gallery-item.cafe:hover #owl-gallery {
+    flex: 3;
+}
+
+.owl-item.active {
+    flex: 1;
+    transition: .3s;
+}
+
+.owl-stage {
+    display: flex !important;
+}
+
+.owl-item.active:hover {
+    flex: 4 !important;
+}
+.owl-item.active:hover .gallery-item{
+    backdrop-filter: blur(10px);
+}
+
+.gallery-item:hover{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+#gallery{
+    margin: 30px 0;
+}

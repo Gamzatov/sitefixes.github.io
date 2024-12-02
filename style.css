@@ -1,15 +1,19 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     margin: 0;
     padding: 0;
+}
+body{
+    box-sizing: border-box !important;
 }
 
 html {
     font-size: 100%;
     font-family: "Inter Tight", sans-serif;
     font-weight: normal;
+    box-sizing: border-box !important;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -514,7 +518,7 @@ select {
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 input[type="radio"],

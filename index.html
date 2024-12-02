@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./icons.css">
     <link rel="stylesheet" href="./burger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -36,7 +41,7 @@
 </head>
 
 <body>
-    <header class="header" >
+    <header class="header">
 
         <div class="wrap">
 
@@ -311,6 +316,68 @@
             </div>
         </div>
     </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="tag">
+                Як ми працюємо
+            </div>
+            <p class="title">
+                Галерея
+            </p>
+            <div id="owl-gallery" class="owl-carousel">
+                <div class="gallery-item cafe">
+                    <div class="gallery-container cafe"></div>
+                    <div class="gallery-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                            ratione, nulla excepturi esse? Sit, ut.
+                        </p>
+                        <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
+                            сайт</button>
+                    </div>
+                </div>
+                <div class="gallery-item cafe">
+                    <div class="gallery-container cafe"></div>
+                    <div class="gallery-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                            ratione, nulla excepturi esse? Sit, ut.
+                        </p>
+                        <button class="btn open-site-btn btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
+                            сайт</button>
+                    </div>
+                </div>
+                <div class="gallery-item cafe">
+                    <div class="gallery-container cafe"></div>
+                    <div class="gallery-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                            ratione, nulla excepturi esse? Sit, ut.
+                        </p>
+                        <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
+                            сайт</button>
+                    </div>
+                </div>
+                <div class="gallery-item cafe">
+                    <div class="gallery-container cafe"></div>
+                    <div class="gallery-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt rerum eos aliquam
+                            suscipit harum expedita cum voluptate voluptatem aliquid iure sed explicabo molestias,
+                            ratione, nulla excepturi esse? Sit, ut.
+                        </p>
+                        <button class="btn open-site-btn" onclick="openPopup('./templates/cafe/index.html')">Открыть
+                            сайт</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </section>
     <section id="contacts">
         <div class="container">
             <div class="scroll-container rounded">
@@ -468,9 +535,16 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function openPopup(url) {
+            // Открываем новое окно с указанными параметрами
+            window.open(url, '_blank', 'width=800,height=600,resizable=yes,scrollbars=yes');
+        }
+    </script>
 </body>
 
 </html>
