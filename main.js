@@ -64,7 +64,7 @@ $(document).ready(function () {
     $("#owl-gallery").owlCarousel({
         loop: true,
         margin: 20,
-        autoplay: true,
+        autoplay: false,
         nav: true,
         responsiveClass: true,
         responsive: {
@@ -89,26 +89,18 @@ $(document).ready(function () {
 });
 
 // pop window for gallery
-// Открыть попап с указанным URL
 function openPopup(url) {
     const popupOverlay = document.getElementById('popup-overlay');
     const iframe = document.getElementById('popup-iframe');
-
-    // Устанавливаем URL в iframe
     iframe.src = url;
-
-    // Показываем попап
     popupOverlay.classList.remove('hidden');
 }
 
-// Закрыть попап
 function closePopup() {
     const popupOverlay = document.getElementById('popup-overlay');
     const iframe = document.getElementById('popup-iframe');
 
-    // Очищаем URL в iframe (для перезагрузки при следующем открытии)
     iframe.src = '';
 
-    // Прячем попап
     popupOverlay.classList.add('hidden');
 }
