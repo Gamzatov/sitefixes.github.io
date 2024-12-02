@@ -65,7 +65,7 @@ $(document).ready(function () {
     $("#owl-gallery").owlCarousel({
         loop: true,
         margin: 10,
-        autoplay: false,
+        autoplay: true,
         nav: true,
         responsiveClass: true,
         responsive: {
