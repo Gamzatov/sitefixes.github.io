@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./icons.css">
+    <link rel="stylesheet" href="pop.css">
     <link rel="stylesheet" href="./burger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./gallery.css">
@@ -320,7 +321,12 @@
             </div>
         </div>
     </section>
-
+    <style>
+        .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff7b00 !important;
+}
+    </style>
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="tag">
@@ -573,7 +579,7 @@
     </footer>
     <div id="popup-overlay" class="popup-overlay hidden">
         <div class="popup">
-            <button class="popup-close" onclick="closePopup()">×</button>
+            <button class="popup-close" style="padding: 0;" onclick="closePopup()">×</button>
             <iframe id="popup-iframe" src="" frameborder="0"></iframe>
         </div>
     </div>

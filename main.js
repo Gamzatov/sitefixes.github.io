@@ -54,6 +54,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 $(document).ready(function () {
     $('.navLink').on('click', function () {
         $('.navbar').toggleClass('expand');
+
         return false;
     });
 });
@@ -63,7 +64,7 @@ $(document).ready(function () {
 
     $("#owl-gallery").owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 10,
         autoplay: false,
         nav: true,
         responsiveClass: true,
@@ -83,7 +84,7 @@ $(document).ready(function () {
             }
         },
         navigation: true,
-        navigationText: ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+       
     });
 
 });

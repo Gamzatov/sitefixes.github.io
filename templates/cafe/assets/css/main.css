@@ -1553,7 +1553,7 @@ responsive
   }
   #top .left-content {
     text-align: center;
-    padding: 25% 0px;
+    padding: 38% 0px;
   }
   #about .right-content {
     margin-left: 0px;
@@ -1583,6 +1583,9 @@ responsive
   footer .left-text-content p {
     text-align: center;
     margin-top: 30px;
+  }
+  .img-fill img{
+    height: 400px;
   }
 }
 
