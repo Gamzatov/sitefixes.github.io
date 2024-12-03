@@ -944,6 +944,9 @@ ul {
     .gallery {
         padding: 0;
     }
+    .logo.logo-head img{
+        max-width: 68px;
+    }
 
     .owl-carousel {
         padding-top: 0;
