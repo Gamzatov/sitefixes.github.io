@@ -910,6 +910,7 @@ ul {
     .owl-carousel{
         padding-top: 0;
     }
+    
     .additional-info{
         display: flex;
         flex-direction: column;
