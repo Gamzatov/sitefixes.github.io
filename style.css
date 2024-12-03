@@ -904,6 +904,16 @@ ul {
     .btn.btn_flex.mob{
         display: none;
     }
+    .gallery{
+        padding: 0;
+    }
+    .owl-carousel{
+        padding-top: 0;
+    }
+    .additional-info{
+        display: flex;
+        flex-direction: column;
+    }
     .btn_item a{
         width: 100%;
         display: block;
