@@ -54,7 +54,7 @@
     height: 0;
 }
 
-.gallery-item.cafe:hover .gallery-info {
+.owl-item.active:hover .gallery-info {
     visibility: visible;
     width: 100%;
     height: 100%;
