@@ -43,3 +43,9 @@
     transform: rotate(-45deg) translate(0px, -5px);
     transition: transform 0.3s ease-out 0.3s;
 }
+
+@media(max-width:762px){
+    .menu-toggle{
+        margin-top: 23px;
+    }
+}
