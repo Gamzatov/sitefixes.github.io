@@ -317,6 +317,9 @@ a:hover {
     max-height: 600px;
     transition: transform 0.3s ease-out;
 }
+.btn_item{
+    display: flex;
+}
 .white{
     color: #fff0df;
 }
@@ -886,6 +889,7 @@ ul {
 .logo-head img{
     max-width: 80px;
 }
+
 
 @media(max-width:762px) {
     .main_container {

@@ -28,6 +28,21 @@
     background-size: cover;
 }
 
+.gallery-container.education {
+    background: url('./images/education.png') no-repeat top center;
+    background-size: cover;
+}
+
+.gallery-container.gym {
+    background: url('./images/gym.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+.gallery-container.clean {
+    background: url('./images/clean.jpg') no-repeat top center;
+    background-size: cover;
+}
+
 .owl-carousel {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -61,7 +76,7 @@
 
 }
 
-.gallery-item.cafe:hover .owl-item.active {
+.gallery-item:hover .owl-item.active {
     width: 100% !important;
     right: 0;
 }
@@ -72,7 +87,7 @@
     flex: 1;
 }
 
-.gallery-item.cafe:hover #owl-gallery {
+.gallery-item:hover #owl-gallery {
     flex: 3;
 }
 
@@ -134,7 +149,7 @@
     justify-content: center;
     align-items: center;
     transform: translate(0, -50%);
-    background-color: #f4f4f4 !important;
+    background-color: #FFD4B2 !important;
     width: 35px;
     height: 35px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -150,7 +165,7 @@
     top: 50%;
     right: 10px;
     transform: translate(0, -50%);
-    background-color: #f4f4f4 !important;
+    background-color: #FFD4B2 !important;
     width: 35px;
     height: 35px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -159,7 +174,7 @@
 
 .owl-prev:hover,
 .owl-next:hover {
-    background-color: #010ed0 !important;
+    background-color: #ff5e14 !important;
 }
 
 .owl-prev:hover span,
