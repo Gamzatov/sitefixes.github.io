@@ -898,6 +898,20 @@ ul {
         /* padding: 15px; */
         padding-top: 80px;
     }
+    .btn_item{
+        width: 100%;
+    }
+    .btn.btn_flex.mob{
+        display: none;
+    }
+    .btn_item a{
+        width: 100%;
+        display: block;
+        margin: 8px auto;
+    }
+    .btns_wrapper{
+        flex-direction: column;
+    }
 
     .flex_wrapper {
         flex-direction: column;
