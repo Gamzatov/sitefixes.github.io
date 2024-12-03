@@ -1,11 +1,23 @@
 $(document).ready(function () {
     $('#menu-icon').on('click', function () {
         $('.navbar').toggleClass('expand');
+
         return false;
     });
 });
 
+// link remove class
+let link = document.querySelectorAll('.navLink');
+let burger = document.querySelector('.menu-toggle');
 
+
+$(document).ready(function () {
+    $('.navLink').on('click', function () {
+        $('.menu-toggle').removeClass('times');
+        $('.menu-toggle').addClass('burger');
+        return false;
+    });
+});
 // arrow parallax animation
 window.addEventListener('scroll', () => {
     const image = document.querySelector('.image-container img');
@@ -54,7 +66,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 $(document).ready(function () {
     $('.navLink').on('click', function () {
         $('.navbar').toggleClass('expand');
-
+        $('menu-toggle').toggleClass('burger');
         return false;
     });
 });
@@ -67,7 +79,14 @@ $(document).ready(function () {
         margin: 10,
         autoplay: true,
         nav: true,
+        lazyLoad: true,
         responsiveClass: true,
+        // animateOut: 'fadeOut',
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        dots: true,
+        autoplayTimeout: 5000,
+        touchDrag: true,
         responsive: {
             0: {
                 items: 1,
@@ -84,7 +103,7 @@ $(document).ready(function () {
             }
         },
         navigation: true,
-       
+
     });
 
 });
@@ -105,3 +124,4 @@ function closePopup() {
 
     popupOverlay.classList.add('hidden');
 }
+
